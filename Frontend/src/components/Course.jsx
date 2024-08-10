@@ -7,7 +7,7 @@ function Course() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("deploy-sai-api.vercel.app/book");
+        const res = await axios.get("https://deploy-sai-api.vercel.app/.app/book");
         console.log(res.data);
         setBook(res.data);
       } catch (error) {
